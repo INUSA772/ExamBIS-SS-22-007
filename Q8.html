@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function calculateDiscount(price, customerType, isHoliday){
+            isHoliday= false;
+            if(price> 5000 && customerType==="Regular" && isHoliday){
+                let discount= (price -5)/100 + (price-5)/100;
+                let finalPrice= price - discount;
+                console.log(finalPrice);
+            }else if(price> 5000 && customerType==="Member" && isHoliday){
+                 let discount= (price -10)/100 + (price-5)/100;
+                let finalPrice= price - discount;
+                console.log(finalPrice);
+            }else if(price> 5000 && customerType==="VIP" && isHoliday){
+                 let discount= (price -20)/100 + (price-5)/100;
+                let finalPrice= price - discount;
+                console.log(finalPrice);
+            }else{
+                console.log(`You will still pay ${price} no discount for you!!`);
+            }
+        }
+        calculateDiscount("10000","Member","true");
+    </script>
+    
+</body>
+</html>
