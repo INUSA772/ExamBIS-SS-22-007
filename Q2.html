@@ -10,9 +10,22 @@
         //Var
         function calculation(){
             var number=12;
-            let total= x + number
+            
         }
-        console.log()
+
+        
+        console.log(number)//Value in number variable will still be displayed despite that the variable is declared inside the function .
+        //const
+        const number=13;
+        number=12;
+        console.log(number);//This will bring errors as const variable cannot be reassigned.
+        //let
+        function sum(x,y){
+            let total= x + y;
+            
+        }
+
+        console.log(total);//This will bring errors as let variable which is sum can only be accessed in the sum block oof code.
         
 
     </script>
