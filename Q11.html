@@ -6,8 +6,51 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        
+    <script>Book={
+       orderid: "122op",
+       customer:{
+        id:"Cu23",
+        name:"joe doe",
+        email:"jo@.com"
+
+       },
+       address:{
+        street:"45 independence",
+        city:"lilongwe",
+        country:"Malawi",
+        postCode:265
+       },
+       items:{
+        productid:"p-008",
+        name:"wireless",
+        quality:2
+       },
+       payment:{
+        method:"mobile money",
+        pjone:"099777383"
+       }
+    }
+        class Book{
+            constructor(orderid,customer, address, items, payment,delivery,discountcodes){
+                this.orderid=orderid;
+            this.customer=customer;
+            this.address=address;
+            this.items=items;
+            this.payment=payment;
+            this.delivery=delivery;
+            }
+        }
+
+    function Book(orderid,customer, address, items, payment,delivery,discountcodes){
+        this.orderid=orderid;
+        this.customer=customer;
+        this.address=address;
+        this.items=items;
+        this.payment=payment;
+        this.delivery=delivery;
+    }
+
+    const book= new Book("663dsd",...);
     </script>
 </body>
 </html>
